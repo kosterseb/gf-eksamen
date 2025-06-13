@@ -96,7 +96,7 @@ header {
 /* Sociale medier til højre */
 .social-media {
     display: flex;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
 }
 
@@ -692,6 +692,7 @@ button:disabled {
     
     .contact-info, .form-container {
         padding: 30px;
+        width: 100%;
     }
     
     .contact-info h2 {
