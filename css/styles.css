@@ -9,29 +9,26 @@ body {
     background-color: #f4f4f4;
 }
 
-h1 {
+h1 {}
 
-}
-
-h2 {
-
-}
+h2 {}
 
 h3 {
-color: #F2EDEB;
+    color: #F2EDEB;
 }
 
-h4 {
-
-}
+h4 {}
 
 /* Hero sektion */
 .hero {
-    max-width: 2000px;
+    max-width: 1700px;
     margin: 0 auto;
     position: relative;
     padding: 0;
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.shadow {
+    box-shadow: inset 20px 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Hero-Billede */
@@ -41,11 +38,23 @@ h4 {
     object-fit: cover;
     display: block;
     filter: brightness(0.8);
-    -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
 /* Hero-Tekst */
+.hero-text {
+    bottom:20px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 44%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    color: #F2EDEB;
+    font-size: 3rem;
+}
+
 .hero h2 {
     position: absolute;
     top: 30%;
@@ -55,14 +64,6 @@ h4 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #F2EDEB;
-}
-.hero h1 {
-    position: absolute;
-    top: 44%;
-    left: 13%;
-    transform: translate(-50%, -50%);
-    color: #F2EDEB;
-    font-size: 3rem;
 }
 
 .hero p {
@@ -90,7 +91,7 @@ h4 {
 /* Header layout */
 header {
     background-color: #2D3842;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 20px;
     top: 0;
     z-index: 100;
@@ -103,7 +104,7 @@ header {
     margin: 0;
     display: flex;
     align-items: center;
-    
+
 }
 
 
@@ -130,7 +131,7 @@ header {
     align-items: center;
     padding: 20px 40px;
     margin-left: 750px;
-    
+
 }
 
 /* Navigation styling */
@@ -173,24 +174,24 @@ header {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .header-right {
         flex-direction: column;
         gap: 20px;
         width: 100%;
     }
-    
+
     .nav ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
-    
+
     .nav a {
         padding: 6px 12px;
         font-size: 14px;
     }
-    
+
     .social-media {
         justify-content: center;
     }
@@ -200,20 +201,20 @@ header {
     header {
         padding: 10px 15px;
     }
-    
+
     .logo {
         height: 40px;
     }
-    
+
     .nav ul {
         gap: 10px;
     }
-    
+
     .nav a {
         padding: 5px 10px;
         font-size: 13px;
     }
-    
+
     .social-media img {
         width: 25px;
         height: 25px;
@@ -249,7 +250,7 @@ header {
     width: 100%;
     height: 400px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .main-image {
@@ -280,7 +281,7 @@ header {
 .thumbnail:hover {
     opacity: 1;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .thumbnail.active {
@@ -323,19 +324,19 @@ header {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .text-content {
         padding: 30px 25px;
     }
-    
+
     .text-content h2 {
         font-size: 2rem;
     }
-    
+
     .main-image-container {
         height: 300px;
     }
-    
+
     .thumbnail {
         height: 80px;
     }
@@ -345,7 +346,7 @@ header {
     .thumbnail-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .text-content h2 {
         font-size: 1.8rem;
     }
@@ -356,30 +357,31 @@ header {
     float: left;
     width: 25%;
     padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
+}
+
+/* Style the images inside the grid */
+.column img {
     opacity: 0.8;
     cursor: pointer;
-  }
-  
-  .column img:hover {
+}
+
+.column img:hover {
     opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Clear floats after the columns */
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* The expanding image container (positioning is needed to position the close button and the text) */
-  .container {
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
     position: relative;
     display: none;
-  }
+}
+
 .content {
     display: flex;
     align-items: center;
@@ -439,11 +441,11 @@ header {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .text-content h2 {
         font-size: 2rem;
     }
-    
+
     .image-content img {
         height: 300px;
     }
@@ -453,7 +455,8 @@ header {
 .gallery-section {
     padding: 80px 20px;
     margin-bottom: 40px;
-    background-color: #fff; /* Tilføjet baggrund for at skille sektioner */
+    background-color: #fff;
+    /* Tilføjet baggrund for at skille sektioner */
 }
 
 .gallery-title {
@@ -524,7 +527,7 @@ header {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .card {
         max-width: 300px;
     }
@@ -546,21 +549,21 @@ header {
     overflow: hidden;
     filter: brightness(0.3);
 }
+
 .andreas-backgroundimage img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.andreas-content {
 
-}
+.andreas-content {}
 
 /* billede af andreas ovenpå baggrund */
 .andreas-content img {
-    position:absolute;
+    position: absolute;
     transform: translate(50%, -140%);
     width: 300px;
-    height: 350px; 
+    height: 350px;
     object-fit: cover;
 
 }
@@ -604,7 +607,8 @@ header {
 
 /* Kontakt sektion med to-kolonne layout */
 .contact-section {
-    padding: 80px 20px; /* Øget padding for mere luft */
+    padding: 80px 20px;
+    /* Øget padding for mere luft */
     margin-bottom: 40px;
 }
 
@@ -621,7 +625,7 @@ header {
 .form-container {
     flex: 1;
     padding: 40px;
-    
+
 }
 
 .form-container h3 {
@@ -657,7 +661,8 @@ label {
     color: #555;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 12px;
     border: 2px solid #ddd;
@@ -668,7 +673,8 @@ input, textarea {
     box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     border-color: #4CAF50;
 }
@@ -727,16 +733,17 @@ button:disabled {
         flex-direction: column;
         gap: 30px;
     }
-    
-    .contact-info, .form-container {
+
+    .contact-info,
+    .form-container {
         padding: 30px;
         width: 100%;
     }
-    
+
     .contact-info h2 {
         font-size: 1.8rem;
     }
-    
+
     .form-container h3 {
         font-size: 1.5rem;
     }
@@ -769,7 +776,7 @@ footer {
     font-size: 1.1rem;
     margin: 0;
     margin-left: 60px;
-    
+
 }
 
 .footer-text h3 {
@@ -809,13 +816,15 @@ footer {
     margin-left: 260px;
 
 }
+
 .social-media img {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease-in-out;
-    
+
 }
 
 .social-media img:hover {
     transform: scale(1.1);
 }
+
