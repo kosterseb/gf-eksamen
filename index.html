@@ -6,115 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Eksamen's opgave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <title>Karlstrup Klatrepark</title>
 </head>
 
 <body>
+
+    <!-- Hero Sektion -->
+    <section class="hero">
+        <!-- Hero-Billede -->
+        <div>
+            <img src="media/hero.jpg" alt="">
+        </div>
+
+        <!-- Hero-tekst -->
+        <div>
+            <h2>KARLSTRUP KLATREPARK</h2>
+            <h1>Klatring for <br>
+                alle aldre</h1>
+            <p>Klatring er en fritidsbeskæftigelse som kan samle hele <br> 
+                familien. Et aktivt liv begynder i Karlstrup Klatrepark.</p>
+        </div>
+        <!-- Hero-knap -->
+            <a href="#" class="btn">Læs mere ></a>
+        
+    </section>
+
     <header>
         <div class="header-container">
             <!-- Logo til venstre -->
             <div class="logo-header">
-                <img src="media/logo.png" alt="Logo" class="logo">
+                <h3>Karlstrup Klatrepark</h3>
             </div>
-    
+
             <!-- Navigation og sociale medier til højre -->
             <div class="header-right">
                 <!-- Navigation -->
                 <nav class="nav">
                     <ul>
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="about.html">Om</a></li>
-                        <li><a href="contact.html">Kontakt</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Hjem</a></li>
+                        <li><a href="#">Aktiviteter</a></li>
+                        <li><a href="#">Prøv at Klatre</a></li>
+                        <li><a href="#">Kontakt Os</a></li>
                     </ul>
                 </nav>
-    
-                <!-- Sociale medier -->
-                <div class="social-media">
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="media/facebook-icon.png" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <img src="media/instagram-icon.png" alt="Instagram">
-                    </a>
-                    <a href="https://www.twitter.com" target="_blank">
-                        <img src="media/twitter-icon.png" alt="Twitter">
-                    </a>
-                </div>
             </div>
         </div>
     </header>
 
     <main>
-
-        <!-- Hero sektion / Billed-slider -->
-        <section>
-            <div class="hero-slider">
-                <div class="slider-container">
-                    <!-- Slide 1 -->
-                    <div class="slide active"
-                        style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')">
-                        <div class="slide-overlay">
-                            <div class="slide-content">
-                                <h1 class="slide-title">Velkommen!</h1>
-                                <p class="slide-text">super duper hjemmeside</p>
-                                <a href="#" class="slide-button">prøv</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="slide"
-                        style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')">
-                        <div class="slide-overlay">
-                            <div class="slide-content">
-                                <h1 class="slide-title">hallihaløjsovs</h1>
-                                <p class="slide-text">gode medisterpølser</p>
-                                <a href="#" class="slide-button">lær det</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="slide"
-                        style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')">
-                        <div class="slide-overlay">
-                            <div class="slide-content">
-                                <h1 class="slide-title">kartoffelmarmelade</h1>
-                                <p class="slide-text">det smage knageme dejligt</p>
-                                <a href="#" class="slide-button">enig?</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Navigation pile -->
-                <button class="nav-arrow prev" onclick="changeSlide(-1)">❮</button>
-                <button class="nav-arrow next" onclick="changeSlide(1)">❯</button>
-
-                <!-- Navigation prikker -->
-                <div class="nav-dots">
-                    <span class="dot active" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
-        </section>
         <article>
-
             <div class="section">
                 <div class="content">
                     <!-- Text on the left -->
                     <div class="text-content">
                         <h2>Prøv lige at overveje den her hjemmeside</h2>
                         <p>Hold kæft en kodyl og stærk hjemmeside jeg har lavet, jeg kan slet ikke få armene ned !</p>
-                        <p>Efter kun 6 måneder med webdevelopment troede jeg at jeg kun ville kunne være i stand til at få computeren til at lave prutte lyd via automation</p>
+                        <p>Efter kun 6 måneder med webdevelopment troede jeg at jeg kun ville kunne være i stand til at
+                            få computeren til at lave prutte lyd via automation</p>
                         <a href="#" class="btn">overvej det lige</a>
                     </div>
-                    
+
                     <!-- Image on the right -->
                     <div class="image-content">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team working together">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Team working together">
                     </div>
                 </div>
             </div>
@@ -124,30 +82,33 @@
         <!-- Billed-Galleri -->
         <section>
             <h2 class="gallery-title">Our Services</h2>
-    
+
             <div class="gallery">
                 <!-- Card 1 -->
                 <div class="card" onclick="openModal(0)">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain View">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Mountain View">
                     <h3>Pølseurt</h3>
                     <p>ej det er lidt ulækkert</p>
                 </div>
-                
+
                 <!-- Card 2 -->
                 <div class="card" onclick="openModal(1)">
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Office Space">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Office Space">
                     <h3>trykspand</h3>
                     <p>hvad fanden er det?</p>
                 </div>
-                
+
                 <!-- Card 3 -->
                 <div class="card" onclick="openModal(2)">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Meeting">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                        alt="Team Meeting">
                     <h3>Tøjvask stinker</h3>
                     <p>det kan vi vidst alle skrive under på</p>
                 </div>
             </div>
-            
+
             <!-- Modal -->
             <div class="modal" id="modal" onclick="closeModal()">
                 <div class="modal-content" onclick="event.stopPropagation()">
@@ -160,70 +121,71 @@
             </div>
         </section>
 
-       <!-- Kontakt sektion med to-kolonne layout -->
-<section class="contact-section">
-    <div class="contact-container">
-        <!-- Kontakt information til venstre -->
-        <div class="contact-info">
-            <h2>Kontakt os</h2>
-            <p>Vi vil gerne høre fra dig! Kontakt os i dag og lad os hjælpe dig med at realisere dine drømme og projekter.</p>
-            
-            <div class="contact-details">
-                <div class="contact-item">
-                    <strong>Adresse:</strong>
-                    <span>Eksempel Vej 123, 2100 København Ø</span>
+        <!-- Kontakt sektion med to-kolonne layout -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Kontakt information til venstre -->
+                <div class="contact-info">
+                    <h2>Kontakt os</h2>
+                    <p>Vi vil gerne høre fra dig! Kontakt os i dag og lad os hjælpe dig med at realisere dine drømme og
+                        projekter.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Adresse:</strong>
+                            <span>Eksempel Vej 123, 2100 København Ø</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Telefon:</strong>
+                            <span>+45 12 34 56 78</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>info@eksempel.dk</span>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Åbningstider:</strong>
+                            <span>Man-Fre: 9:00-17:00</span>
+                        </div>
+                    </div>
+
+                    <p>Du kan også følge os på sociale medier for de seneste nyheder og opdateringer.</p>
                 </div>
-                
-                <div class="contact-item">
-                    <strong>Telefon:</strong>
-                    <span>+45 12 34 56 78</span>
-                </div>
-                
-                <div class="contact-item">
-                    <strong>Email:</strong>
-                    <span>info@eksempel.dk</span>
-                </div>
-                
-                <div class="contact-item">
-                    <strong>Åbningstider:</strong>
-                    <span>Man-Fre: 9:00-17:00</span>
+
+                <!-- Kontakt form til højre -->
+                <div class="form-container">
+                    <h3>Send os en besked</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Navn</label>
+                            <input type="text" id="name" name="name" placeholder="Skriv dit fulde navn...">
+                            <div class="error" id="nameError">Skriv dit fulde navn</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Skriv din email adresse...">
+                            <div class="error" id="emailError">Skriv en gyldig email adresse</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Besked</label>
+                            <textarea id="message" name="message" placeholder="Skriv din besked her..."></textarea>
+                            <div class="error" id="messageError">Husk at skriv en besked</div>
+                        </div>
+
+                        <button type="submit">Send Besked</button>
+                    </form>
+
+                    <div class="success-message" id="successMessage">
+                        Tak! Vi har modtaget din besked. Vi vender tilbage hurtigst muligt.
+                    </div>
                 </div>
             </div>
-            
-            <p>Du kan også følge os på sociale medier for de seneste nyheder og opdateringer.</p>
-        </div>
-        
-        <!-- Kontakt form til højre -->
-        <div class="form-container">
-            <h3>Send os en besked</h3>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="name">Navn</label>
-                    <input type="text" id="name" name="name" placeholder="Skriv dit fulde navn...">
-                    <div class="error" id="nameError">Skriv dit fulde navn</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Skriv din email adresse...">
-                    <div class="error" id="emailError">Skriv en gyldig email adresse</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Besked</label>
-                    <textarea id="message" name="message" placeholder="Skriv din besked her..."></textarea>
-                    <div class="error" id="messageError">Husk at skriv en besked</div>
-                </div>
-
-                <button type="submit">Send Besked</button>
-            </form>
-
-            <div class="success-message" id="successMessage">
-                Tak! Vi har modtaget din besked. Vi vender tilbage hurtigst muligt.
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
     </main>
     <footer>
