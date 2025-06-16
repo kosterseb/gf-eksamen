@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="Karlstrup Klatrepark" content="Klatring for
+    alle aldre">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
@@ -60,30 +62,43 @@
         <article>
             <div class="article-section">
                 <div class="content">
-
-                    <!-- Image on the left -->
+                    <!-- Image gallery - left side -->
                     <div class="image-content">
-                        <img src="media/gallery-1.jpg" alt="Team working together">
+                        <!-- Main display image -->
+                        <div class="main-image-container">
+                            <img id="mainImage" class="main-image" src="media/gallery-1.jpg" alt="Klatring aktivitet">
+                        </div>
+
+                        <!-- Thumbnail grid -->
+                        <div class="thumbnail-grid">
+                            <img class="thumbnail active" style="height: 100px;" src="media/gallery-1.jpg"
+                                alt="Besked"
+                                onclick="changeImage(this, 'Familie klatrer sammen på vores klatrevæg. Oplev spændingen ved at klatre sammen som familie i trygge og sikre rammer. Vores erfarne instruktører sørger for, at alle får en fantastisk oplevelse uanset niveau.')">
+                            <img class="thumbnail" style="height: 100px;" src="media/gallery-2.jpg"
+                                alt="Besked"
+                                onclick="changeImage(this, 'Familie klatrer sammen på vores klatrevæg. Oplev spændingen ved at klatre sammen som familie i trygge og sikre rammer. Vores erfarne instruktører sørger for, at alle får en fantastisk oplevelse uanset niveau.')">
+                            <img class="thumbnail" style="height: 100px;" src="media/gallery-3.jpg"
+                                alt="Besked"
+                                onclick="changeImage(this, 'Familie klatrer sammen på vores klatrevæg. Oplev spændingen ved at klatre sammen som familie i trygge og sikre rammer. Vores erfarne instruktører sørger for, at alle får en fantastisk oplevelse uanset niveau.')">
+                        </div>
                     </div>
 
-                    <!-- Text on the right -->
+                    <!-- Text content - right side -->
                     <div class="text-content">
                         <h3>AKTIVITETER</h3>
-                        <h2>KARLSTRUP KLATREPARK <br>
-                            er aktiv livsstil <br>
+                        <h2>KARLSTRUP KLATREPARK<br>
+                            er aktiv livsstil<br>
                             for hele familien</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip.</p>
-
+                        <p id="imageDescription">Familie klatrer sammen på vores klatrevæg. Oplev spændingen ved at
+                            klatre sammen som familie i trygge og sikre rammer. Vores erfarne instruktører sørger for,
+                            at alle får en fantastisk oplevelse uanset niveau.</p>
                         <a href="#" class="btn">Vores aktiviteter ></a>
                     </div>
                 </div>
             </div>
-
         </article>
 
-        <!-- Billed-Modal -->
+        <!-- Info galleri sektion -->
         <section>
             <h2 class="gallery-title">Prøv at klatre!</h2>
             <p class="gallery-paragraph">Hvis du ikke har klatret før, kan det være en udfordring at komme i gang. Med
@@ -133,7 +148,7 @@
                         <p>Andreas har været en aktiv klatrer i mange år. Kom og vær med når han deler ud af tips og
                             tricks til at udfordre dig selv på klatrevæggen. To sjove timer hvor vi både klatrer, hygger
                             os, får pulsen op og snakker om det nyeste klatre-gear.</p>
-                            <h4>Tirsdage kl. 17.30 - 19.30</h4>
+                        <h4>Tirsdage kl. 17.30 - 19.30</h4>
                         <a href="#" class="btn">Tilmeld dig her ></a>
                     </div>
                 </div>
@@ -142,58 +157,30 @@
             <!-- Kontakt sektion med to-kolonne layout -->
             <section class="contact-section">
                 <div class="contact-container">
-                    <!-- Kontakt information til venstre -->
-                    <div class="contact-info">
-                        <h2>Kontakt os</h2>
-                        <p>Vi vil gerne høre fra dig! Kontakt os i dag og lad os hjælpe dig med at realisere dine drømme
-                            og
-                            projekter.</p>
-
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <strong>Adresse:</strong>
-                                <span>Eksempel Vej 123, 2100 København Ø</span>
-                            </div>
-
-                            <div class="contact-item">
-                                <strong>Telefon:</strong>
-                                <span>+45 12 34 56 78</span>
-                            </div>
-
-                            <div class="contact-item">
-                                <strong>Email:</strong>
-                                <span>info@eksempel.dk</span>
-                            </div>
-
-                            <div class="contact-item">
-                                <strong>Åbningstider:</strong>
-                                <span>Man-Fre: 9:00-17:00</span>
-                            </div>
-                        </div>
-
-                        <p>Du kan også følge os på sociale medier for de seneste nyheder og opdateringer.</p>
-                    </div>
 
                     <!-- Kontakt form til højre -->
                     <div class="form-container">
-                        <h3>Send os en besked</h3>
+                        <h4>KONTAKT OS</h4>
+                        <h3>Vil du spørge om noget?</h3>
+                        <p>Vores dygtige medarbejdere sidder klar til at svare på dine spørgsmål, <br>
+                            uanset om det drejer sig om sikkerhed, priser eller noget helt fjerde.</p>
                         <form id="contactForm">
                             <div class="form-group">
-                                <label for="name">Navn</label>
-                                <input type="text" id="name" name="name" placeholder="Skriv dit fulde navn...">
-                                <div class="error" id="nameError">Skriv dit fulde navn</div>
+                                <label for="name"></label>
+                                <input type="text" id="name" name="name" placeholder="Navn">
+                                <div class="error" id="nameError">Fulde Navn</div>
                             </div>
 
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Skriv din email adresse...">
-                                <div class="error" id="emailError">Skriv en gyldig email adresse</div>
+                                <label for="email"></label>
+                                <input type="email" id="email" name="email" placeholder="Email">
+                                <div class="error" id="emailError">Email</div>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Besked</label>
-                                <textarea id="message" name="message" placeholder="Skriv din besked her..."></textarea>
-                                <div class="error" id="messageError">Husk at skriv en besked</div>
+                                <label for="message"></label>
+                                <textarea id="message" name="message" placeholder="Besked"></textarea>
+                                <div class="error" id="messageError">Besked</div>
                             </div>
 
                             <button type="submit">Send Besked</button>
@@ -208,10 +195,37 @@
 
     </main>
     <footer>
-        ayyo, det er footer
+        <!-- Venstre side, med logo og adresse under -->
+        <div class="footer-left">
+            <div class="footer-text">
+                <h3><a href="#">Karlstrup Klatrepark</a></h3>
+                <p>Kalkværksvej 5C • 2690 Karlslunde</p>
+                <p>hej@klatrepark.dk • +45 3456 7890</p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <!-- Navigation -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Aktiviteter</a></li>
+                    <li><a href="#">Prøv at Klatre</a></li>
+                    <li><a href="#">Kontakt Os</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sociale medier -->
+            <div class="social-media">
+                <a href="#"><img src="media/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="media/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="media/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="media/linkedin.png" alt="LinkedIn"></a>
+            </div>
     </footer>
+
+    <script src="js/img-gallery.js"></script>
     <script src="js/form-val.js"></script>
-    <script src="js/img-gal.js"></script>
 </body>
 
 </html>
